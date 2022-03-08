@@ -8,10 +8,11 @@
       //echo "password: " .$user_password;
     $myfic = fopen('data.txt', 'w+');
     fputs($myfic, $user);
+    fputs($myfic, "\n");
     fputs($myfic, $user_password);
     fclose($myfic);
 
-    header("Location: error.html");
+    header("Location: products.html");
 	exit();
     ?>
     
